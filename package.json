@@ -1,0 +1,41 @@
+{
+  "name": "react-progress-label",
+  "version": "1.2.1",
+  "description": "progress label component",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel lib --out-dir dist & webpack -p",
+    "start": "webpack-dev-server -c --port=7788",
+    "deploy": "npm run build & github-pages-deploy",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "github-pages-deploy": {
+    "src": "example"
+  },
+  "author": "Joy Patel",
+  "license": "ISC",
+  "peerDependencies": {
+    "react": "^0.14.0",
+    "react-dom": "^0.14.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.1.21",
+    "babel-loader": "^6.2.0",
+    "babel-preset-es2015": "^6.1.18",
+    "babel-preset-react": "^6.1.18",
+    "css-loader": "^0.23.0",
+    "github-pages-deploy": "0.0.3",
+    "less": "^2.5.3",
+    "less-loader": "^2.2.1",
+    "react-input-color": "^1.7.1",
+    "react-input-slider": "^1.3.1",
+    "style-loader": "^0.13.0",
+    "webpack": "^1.12.6"
+  },
+  "keywords": [
+    "circle",
+    "progress",
+    "react",
+    "react-component"
+  ]
+}
